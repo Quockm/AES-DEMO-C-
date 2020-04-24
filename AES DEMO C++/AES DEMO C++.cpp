@@ -236,7 +236,10 @@ void PrintHex(unsigned char x)
 
 int main()
 {
-    unsigned char  message[] = "This is a message we will encrypt with AES!";
+    unsigned char message[100];
+    std::cout << "Enter your message!!" << std::endl;
+    std::cin >> message;
+    //unsigned char  message[] = "Simple Test";
     unsigned char key[16] =
     {
         1, 2, 3, 4,
